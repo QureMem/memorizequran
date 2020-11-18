@@ -1,14 +1,17 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import { domain } from "../config";
 const Header = () => {
+  let history = useHistory();
   return (
     <div className="flex p-3 justify-end">
-      <a
+      <p
         className="pl-6 text-xl font-medium tracking-widest cursor-pointer"
-        href={domain}
+        // href={domain}
+        onClick={() => history.push("/")}
       >
         MemorizeQuran
-      </a>
+      </p>
     </div>
   );
 };

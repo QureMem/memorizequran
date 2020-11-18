@@ -11,7 +11,7 @@ const Homepage = () => {
   Surahs2 = Surahs.slice(38, 76);
   Surahs3 = Surahs.slice(76, 114);
   return (
-    <>
+    <div className="flex flex-col h-screen">
       <Header />
       <div>
         <div className="max-w-md mx-auto flex p-6 mt-7 mb-7">
@@ -19,7 +19,7 @@ const Homepage = () => {
             <h1 className="text-4xl text-emr leading-tight font-semibold">
               {ar_text.basmalah}
             </h1>
-            <p className="text-base text-gray-700 leading-normal">
+            <p className="pr-2 text-base text-gray-700 leading-normal">
               {ar_text.description}
             </p>
           </div>
@@ -64,7 +64,7 @@ const Homepage = () => {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

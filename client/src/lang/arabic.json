@@ -1,5 +1,12 @@
 {
   "istiada": "أَعُوذُ بِاللهِ مِنَ الشَّيْطَانِ الرَّجِيمِ",
   "basmalah": "بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ",
-  "description": "وصف موجز للتطبيق"
+  "description": "وصف موجز للتطبيق",
+  "pretestTitle": "الإعداد",
+  "pretestDescription": "شرح سريع للإعدادات",
+  "pretestStart": "البداية",
+  "pretestStartError": "لا يمكن لهذه القيمة",
+  "pretestEndError": "لا يمكن لهذه القيمة",
+  "pretestEnd": "النهاية",
+  "pretestSubmit": "بدأ"
 }
