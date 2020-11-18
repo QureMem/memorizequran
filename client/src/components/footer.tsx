@@ -1,5 +1,5 @@
 import React from "react";
-import Github from "../assets/github-brands.svg";
+// import Github from "../assets/github-brands.svg";
 import { domain } from "../config";
 const Footer = () => {
   const creationYear = 2020;

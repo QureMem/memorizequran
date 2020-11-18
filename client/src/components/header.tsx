@@ -1,6 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import { domain } from "../config";
+// import { domain } from "../config";
 const Header = () => {
   let history = useHistory();
   return (
