@@ -40,12 +40,13 @@ const Pretest = () => {
     if (start < 1 || start > max) setErrStart(true);
     else setErrStart(false);
 
-    if (end > max || max < start) setErrEnd(true);
+    if (end > max || end < start) setErrEnd(true);
     else setErrEnd(false);
 
-    if (!(start < 1 || start > max || end > max || max < start))
+    if (!(start < 1 || start > max || end > max || end < start))
       history.push(`/test/${params.id}/${start}/${end}`);
   };
+
   return (
     <div className="flex flex-col h-screen">
       <Header />
@@ -66,10 +67,10 @@ const Pretest = () => {
               type="number"
               name="start"
               id="start"
-              className={"flex border-b border-solid h-10 p-3".concat(
+              className={"pretest-input ".concat(
                 errStart
-                  ? " border-red-600 text-red-600"
-                  : " border-gray-500 text-black"
+                  ? "border-red-600 text-red-600"
+                  : "border-gray-500 text-black"
               )}
               value={start}
               onChange={(e) => handleStart(e.target.value)}
@@ -86,10 +87,10 @@ const Pretest = () => {
               type="number"
               name="end"
               id="end"
-              className={"flex border-b border-solid h-10 p-3".concat(
+              className={"pretest-input ".concat(
                 errEnd
-                  ? " border-red-600 text-red-600"
-                  : " border-gray-500 text-black"
+                  ? "border-red-600 text-red-600"
+                  : "border-gray-500 text-black"
               )}
               value={end}
               onChange={(e) => handleEnd(e.target.value)}
@@ -103,6 +104,7 @@ const Pretest = () => {
               type="submit"
               onClick={(e) => handleSubmit(e)}
               className="bg-emr rounded text-white font-bold leading-loose"
+              data-testid="submit-button"
             >
               {ar_text.pretestSubmit}
             </button>

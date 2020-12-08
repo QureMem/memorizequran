@@ -7,10 +7,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        emr: "#1e824c"
-      }
+        emr: "#1e824c",
+      },
     },
   },
   variants: {},
   plugins: [],
-}
+};

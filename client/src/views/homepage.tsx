@@ -33,7 +33,9 @@ const Homepage = () => {
                 className="text-2xl p-3 text-emr font-semibold hover:underline"
                 key={`1${i}`}
               >
-                <Link to={`/pretest/${i + 1}`}>{`${e.number}. ${e.name}`}</Link>
+                <Link
+                  to={`/pretest/${e.number}`}
+                >{`${e.number}. ${e.name}`}</Link>
               </div>
             );
           })}
@@ -45,7 +47,9 @@ const Homepage = () => {
                 className="text-2xl p-3 text-emr font-semibold hover:underline"
                 key={`2${i}`}
               >
-                <Link to={`/pretest/${i + 1}`}>{`${e.number}. ${e.name}`}</Link>
+                <Link
+                  to={`/pretest/${e.number}`}
+                >{`${e.number}. ${e.name}`}</Link>
               </div>
             );
           })}
@@ -57,7 +61,9 @@ const Homepage = () => {
                 className="text-2xl p-3 text-emr font-semibold hover:underline"
                 key={`3${i}`}
               >
-                <Link to={`/pretest/${i + 1}`}>{`${e.number}. ${e.name}`}</Link>
+                <Link
+                  to={`/pretest/${e.number}`}
+                >{`${e.number}. ${e.name}`}</Link>
               </div>
             );
           })}

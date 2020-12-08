@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.pretest-input {
+  @apply flex border-b border-solid h-10 p-3;
+}
