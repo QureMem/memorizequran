@@ -34,7 +34,7 @@ const Homepage = () => {
                 key={`1${i}`}
               >
                 <Link
-                  to={`/pretest/${e.number}`}
+                  to={`/settings/${e.number}`}
                 >{`${e.number}. ${e.name}`}</Link>
               </div>
             );
@@ -48,7 +48,7 @@ const Homepage = () => {
                 key={`2${i}`}
               >
                 <Link
-                  to={`/pretest/${e.number}`}
+                  to={`/settings/${e.number}`}
                 >{`${e.number}. ${e.name}`}</Link>
               </div>
             );
@@ -62,7 +62,7 @@ const Homepage = () => {
                 key={`3${i}`}
               >
                 <Link
-                  to={`/pretest/${e.number}`}
+                  to={`/settings/${e.number}`}
                 >{`${e.number}. ${e.name}`}</Link>
               </div>
             );

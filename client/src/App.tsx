@@ -10,10 +10,10 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/test/:id/:start/:end" exact>
+        <Route path="/practice/:id/:start/:end" exact>
           <Test />
         </Route>
-        <Route path="/pretest/:id" exact>
+        <Route path="/settings/:id" exact>
           <Pretest />
         </Route>
         <Route path="/" exact>

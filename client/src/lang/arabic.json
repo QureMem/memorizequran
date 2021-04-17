@@ -8,5 +8,6 @@
   "pretestStartError": "لا يمكن لهذه القيمة",
   "pretestEndError": "لا يمكن لهذه القيمة",
   "pretestEnd": "النهاية",
-  "pretestSubmit": "بدأ"
+  "pretestSubmit": "بدأ",
+  "testSurah": "سورة"
 }

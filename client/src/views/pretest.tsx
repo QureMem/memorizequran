@@ -4,6 +4,7 @@ import Header from "../components/header";
 import ar_text from "../lang/arabic.json";
 import Surahs from "../data/surahs.json";
 import Footer from "../components/footer";
+
 const Pretest = () => {
   let history = useHistory();
   const params = useParams<any>();
@@ -44,7 +45,7 @@ const Pretest = () => {
     else setErrEnd(false);
 
     if (!(start < 1 || start > max || end > max || end < start))
-      history.push(`/test/${params.id}/${start}/${end}`);
+      history.push(`/practice/${params.id}/${start}/${end}`);
   };
 
   return (
