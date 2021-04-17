@@ -3,8 +3,8 @@ import { render, screen, fireEvent } from "@testing-library/react";
 import App from "../views/pretest";
 import arabic from "../lang/arabic.json";
 import Surahs from "../data/surahs.json";
-import { Router, BrowserRouter, MemoryRouter } from "react-router-dom";
-import { createMemoryHistory } from "history";
+import { BrowserRouter} from "react-router-dom"; // Router, MemoryRouter
+// import { createMemoryHistory } from "history";
 import "@testing-library/jest-dom/extend-expect";
 import RenderWithRoute from "./renderWithRoute";
 
