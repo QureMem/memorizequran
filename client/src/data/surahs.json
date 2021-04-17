@@ -65,7 +65,7 @@
   },
   {
     "number": 9,
-    "name": "سورة التوبة",
+    "name": "سورة التّوبة",
     "transliteration_en": "At-Tawba",
     "translation_en": "The Repentance",
     "total_verses": 129,
@@ -169,7 +169,7 @@
   },
   {
     "number": 22,
-    "name": "سورة الحج",
+    "name": "ّسورة الحج",
     "transliteration_en": "Al-Hajj",
     "translation_en": "The Pilgrimage",
     "total_verses": 78,
@@ -345,7 +345,7 @@
   },
   {
     "number": 44,
-    "name": "سورة الدخان",
+    "name": "سورة الدّخان",
     "transliteration_en": "Ad-Dukhaan",
     "translation_en": "The Smoke",
     "total_verses": 59,
@@ -481,7 +481,7 @@
   },
   {
     "number": 61,
-    "name": "سورة الصّف",
+    "name": "ّسورة الصّف",
     "transliteration_en": "As-Saff",
     "translation_en": "The Ranks",
     "total_verses": 14,
@@ -505,7 +505,7 @@
   },
   {
     "number": 64,
-    "name": "سورة التغابن",
+    "name": "سورة التّغابن",
     "transliteration_en": "At-Taghaabun",
     "translation_en": "Mutual Disillusion",
     "total_verses": 18,
@@ -513,7 +513,7 @@
   },
   {
     "number": 65,
-    "name": "سورة الطلاق",
+    "name": "سورة الطّلاق",
     "transliteration_en": "At-Talaaq",
     "translation_en": "Divorce",
     "total_verses": 12,
@@ -521,7 +521,7 @@
   },
   {
     "number": 66,
-    "name": "سورة التحريم",
+    "name": "سورة التّحريم",
     "transliteration_en": "At-Tahrim",
     "translation_en": "The Prohibition",
     "total_verses": 12,
@@ -569,7 +569,7 @@
   },
   {
     "number": 72,
-    "name": "سورة الجن",
+    "name": "ّسورة الجن",
     "transliteration_en": "Al-Jinn",
     "translation_en": "The Jinn",
     "total_verses": 28,
@@ -729,7 +729,7 @@
   },
   {
     "number": 92,
-    "name": "سورة الليل",
+    "name": "سورة اللّيل",
     "transliteration_en": "Al-Lail",
     "translation_en": "The Night",
     "total_verses": 21,
@@ -777,7 +777,7 @@
   },
   {
     "number": 98,
-    "name": "سورة البينة",
+    "name": "سورة البيّنة",
     "transliteration_en": "Al-Bayyina",
     "translation_en": "The Evidence",
     "total_verses": 8,
@@ -785,7 +785,7 @@
   },
   {
     "number": 99,
-    "name": "سورة الزلزلة",
+    "name": "سورة الزّلزلة",
     "transliteration_en": "Az-Zalzala",
     "translation_en": "The Earthquake",
     "total_verses": 8,

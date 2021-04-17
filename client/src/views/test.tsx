@@ -4,7 +4,7 @@ import Header from "../components/header";
 import ar_text from "../lang/arabic.json";
 import Surahs from "../data/surahs.json";
 import Footer from "../components/footer";
-
+import { ReactComponent as Arrow }  from '../assets/left-arrow.svg'
 interface VerseString {
   "verseNumber": number,
   "verseString": string,
@@ -25,6 +25,7 @@ const Test = () => {
   const [max, setMax] = useState(1);
   const [state, setState] = useState<Surah>();
   const [inputField, setInput] = useState("");
+  const [correct, setCorrect] = useState(false)
   const format_surah = (n: number) => {
       if(n <10){
         return `00${n}`;
@@ -51,6 +52,8 @@ const Test = () => {
 
   const changeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
       setInput(e.target.value);
+      if(inputField.length > 10) setCorrect(false);
+      else setCorrect(true);
   }
   const keydownHandler = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if(e.key === 'Enter' && inputField !== ""){
@@ -70,7 +73,7 @@ const Test = () => {
     <Header/>
     <div className="max-w-xl w-full p-2 mx-auto">
       <h3 className="text-3xl my-8 text-center font-bold">
-        {ar_text.testSurah + ' ' + state?.nameArabic}
+        {Surahs[parseInt(params.id)-1].name}
       </h3>
       <h4 className="text-xl mb-4 text-center">
         {!(current === 1 && (state?.chapterNumber === 1 || state?.chapterNumber === 9)) &&  ((current>1)? 
@@ -78,13 +81,11 @@ const Test = () => {
         : ar_text.basmalah)} 
       </h4>
       <div className="w-full flex">
-        <div className="flex-grow"><input type="text" value={inputField} onChange={changeHandler} onKeyDown={keydownHandler} className="w-full h-full border-2 border-gray-500	 rounded-r-xl p-3 text-lg outline-none" /></div>
-       <div className=""><button className="p-4 bg-emr w-full h-full rounded-l-xl" onClick={nextAya}>N</button></div>
+        <div className="flex-grow"><input type="text" value={inputField} onChange={changeHandler} onKeyDown={keydownHandler} className={["w-full h-full border-2 rounded-r-xl p-3 text-lg outline-none", inputField.length === 0 ? 'border-gray-700' : (correct ? 'border-emr': 'border-red-600')].join(' ')} /></div>
+       <div className=""><button className={["p-4 w-full h-full rounded-l-xl", inputField.length === 0 ? 'bg-gray-700' : (correct ? "bg-emr": "bg-red-600") ].join(' ')} onClick={nextAya}>
+         <Arrow fill="white" className="w-4" />
+         </button></div>
       </div>
-      {/* <div>
-        {state?.verses[current-1]?.verseString}
-      </div>
-      <div>{current}/{max} <button onClick={nextAya}>Click</button></div> */}
     </div>
     <Footer/>
     </div>);
