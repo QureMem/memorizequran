@@ -1,13 +1,58 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.faq__desc.show-description {
+  height: auto;
+  margin-bottom: 15px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Arrows */
+
+/* closed */
+
+.faq {
+  width: 100%;
+  padding-top: 65px;
+  padding-bottom: 80px;
+}
+.faq__title {
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+
+.faq__question-button::after {
+  @apply w-2 h-2;
+  content: url(./assets/arrow-down-sign-to-navigate.svg);
+  /* content: ">"; */
+  transform: rotate(180deg);
+  transform: scale(0.03);
+}
+
+
+.pretest-input {
+  @apply flex border-b border-solid h-10 p-3;
+}
+
+.faq__question-button::after {
+  @apply mr-2;
+  transition: transform 300ms ease-out;
+
+}
+
+.faq__question-button.font-bold::after{
+  /* @apply transform -rotate-90; */
+  transform: rotate(-90deg) scale(0.03);
+}
+
+.faq__desc {
+  @apply pr-5 h-0 overflow-hidden;
+  transition: all 200ms ease-out;
+}
+
+.faq__question-button {
+  @apply flex w-full px-0 py-6 cursor-pointer justify-between;
+
 }
