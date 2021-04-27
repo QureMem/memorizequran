@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { useHistory, useLocation, Redirect } from "react-router-dom";
+import { useLocation, Redirect } from "react-router-dom";
 import Header from "../components/header";
-import ar_text from "../lang/arabic.json";
+// import ar_text from "../lang/arabic.json";
 
 import Footer from "../components/footer";
 import Row from "../components/resultrow";
@@ -26,7 +26,7 @@ interface VerseString {
   verseStringB: string;
 }
 const Results = () => {
-  let history = useHistory();
+  // let history = useHistory();
   const { state } = useLocation<StateInterface>();
   const [surah, setSurah] = useState<Surah>();
   const [activeIndex, setActiveIndex] = useState(0);

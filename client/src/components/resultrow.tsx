@@ -1,6 +1,6 @@
 import React from "react";
 import * as diff from "diff";
-import { isCorrect, arabicFixes, hasDiacritics } from "../functions/util";
+// import { isCorrect, arabicFixes, hasDiacritics } from "../functions/util";
 
 interface VerseString {
   verseNumber: number;
